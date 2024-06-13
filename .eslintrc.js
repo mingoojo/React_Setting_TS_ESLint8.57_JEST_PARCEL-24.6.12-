@@ -4,7 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
   ],
   parserOptions: {
     ecmaVersion: "latest",
