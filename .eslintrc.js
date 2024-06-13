@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true, // jest사용을 위한 추가
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -27,7 +28,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "linebreak-style": 0,
     indent: ["error", 2],
-    "no-console": "warn",
     "no-trailing-spaces": "error",
     curly: "error",
     "brace-style": "error",
@@ -54,5 +54,4 @@ module.exports = {
     "jsx-quotes": ["error", "prefer-double"],
     "max-params": ["error", 10],
   },
-  jest: ture,
 };
