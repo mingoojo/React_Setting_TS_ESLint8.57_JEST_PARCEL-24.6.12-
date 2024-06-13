@@ -245,9 +245,12 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true, // jest사용을 위한 추가
   },
   extends: [
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
   ],
   parserOptions: {
     ecmaVersion: "latest",
@@ -259,7 +262,7 @@ module.exports = {
   ],
   rules: {
     "no-console": "warn",
-    "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -268,7 +271,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "linebreak-style": 0,
     indent: ["error", 2],
-    "no-console": "warn",
     "no-trailing-spaces": "error",
     curly: "error",
     "brace-style": "error",
@@ -295,7 +297,6 @@ module.exports = {
     "jsx-quotes": ["error", "prefer-double"],
     "max-params": ["error", 10],
   },
-  jest: ture,
 };
 ```
 
