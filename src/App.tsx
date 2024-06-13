@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div>
+    <div title="main">
         hello world!
     </div>
   )

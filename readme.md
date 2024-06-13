@@ -189,6 +189,7 @@ npx tsc --init
 
 - 설치후 tsconfig.json이라는 파일이 생성됨
 - 'tsconfig.json' 파일의 jsx속성을 변경한다 ("jsx": "react-jsx")
+- 'tsconfig.json' 파일의 types속성을 변경한다 ("types": ["@testing-library/jest-dom"])
 
 <br/>
 
@@ -311,11 +312,12 @@ npm install -D @types/react @types/react-dom
 <br/>
 
 ##### 6. JEST 설치
+- 만드는 날 기준으로 @testing-library/react가 14버전이 에러가 안난다. 나중에 바뀔지도??
 
 ```
 npm i -D jest @types/jest @swc/core @swc/jest \
     jest-environment-jsdom \
-    @testing-library/react @testing-library/jest-dom
+    @testing-library/react@release-14.x @testing-library/jest-dom
 ```
 
 - jest.config.js파일 생성 후 세팅한다.
