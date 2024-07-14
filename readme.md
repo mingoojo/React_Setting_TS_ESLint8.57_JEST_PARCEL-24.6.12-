@@ -340,6 +340,41 @@ npm install -D parcel
 
 <br/>
 
+
+parcel을 설치후에 image를 사용하기 위한 static폴더를 생성한다.
+```
+mkdir static
+```
+
+static폴더를 사용하기 위한 라이브러리를 추가한다.
+```
+npm install parcel-reporter-static-files-copy
+```
+
+parcelrc파일을 생성한다.
+```
+touch .parcelrc
+```
+
+parcelrc파일을 작성한다.
+```
+{
+  "extends": "@parcel/config-default",
+  "reporters": [
+    "...",
+    "parcel-reporter-static-files-copy"
+  ]
+}
+```
+
+폴더명을 static이 아닌 다른 이름을 쓰고 싶다면 package.json에 다음을 추가한다.
+```
+"staticFiles": {
+  "staticPath": "public" //폴더명
+}
+```
+
+
 ##### 8. 파일 설정
 
 ```

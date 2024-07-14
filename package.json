@@ -7,7 +7,7 @@
   "description": "",
   "source": "./index.html",
   "scripts": {
-    "start": "parcel --port 8080",
+    "start": "parcel --port 3000",
     "build": "parcel build",
     "check": "tsc --noEmit",
     "lint": "eslint --fix . --config .eslintrc.js",
@@ -44,7 +44,11 @@
   "dependencies": {
     "eslint-config-xo": "^0.45.0",
     "eslint-config-xo-typescript": "^4.0.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "staticFiles": {
+    "staticPath": "public"
   }
 }
